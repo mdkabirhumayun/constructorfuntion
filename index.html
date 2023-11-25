@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>******report card*****</h1>
+    <h3 id="name">Name</h3>
+    <h3 id="roll_no">Roll No-</h3>
+    <h3 id="class">Class</h3>
+    <h3 id="section" >Section</h3>
+
+</body>
+
+</html>
+<script>
+function studentDetail(name, roll_no, clas, section, mark_of_5_subjects) {
+    let studentDetails={};
+    this.name=name;
+    this.roll_no=roll_no;
+    this.clas=clas;
+    this.section=section;
+    this.mark_of_5_subjects=mark_of_5_subjects;
+    
+    
+}
+
+function mark_of_5_subjects(scinece,maths,sociial_sciense, english,hindi){
+        this.scinece=scinece;
+        this.maths=maths;
+        this.sociial_sciense=sociial_sciense;
+        this.english=english;
+        this.hindi=hindi;
+
+
+    } 
+   
+    let std1= new studentDetail("rahul",1,"vi","A",new mark_of_5_subjects(98,99,85,99,88));
+    console.log(std1);
+  printReportCard= function(){
+    console.log(this.name);
+  }
+  /* 
+     function reportCard(name, roll_no, clas, section, mark_of_5_subjects){
+        }
+    reportCard.call("rahul",1,"vi","A",new mark_of_5_subjects(98,99,85,99,88));
+    */
+    
+
+</script>
